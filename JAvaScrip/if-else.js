@@ -1,43 +1,51 @@
-/* 1- Matematiksel Operatörler */
+/*
+var marka = 'Opel';
+var model = 'Astra';
+var otomatik = 'yes';
 
-var x = 10;
-var y = 20;
-var z = 30;
+/* if else statement */ /*
 
-console.log(x+y);
-console.log(z-y);
-console.log(x*y+z);
-console.log(z/x-y);
+if(otomatik=='yes'){
+    console.log('car is automatic');
+}else{
+    console.log('car is not automatic');
+}
 
-x++;
-x=x+1;
-console.log(x);
+otomatik = true
+if(otomatik){
+    console.log(marka+' '+model+' is otomatik');
+}
 
+if(otomatik==true) {
+    console.log("true")
+}
 
-/* 2- Karsilastirma Operatörler */
+if(10==='10'){ 
+    console.log('numbers are equal')
+}
 
-var sonuc = x>y;
-console.log(sonuc);
+*/
+/*3 tane = kullandigimizda typleri de kontrol */
 
-console.log(x<y);
+/*
+var vites ='1';
+if (vites=='1'){
+    console.log('auto is automatic');
+}else if (vites=='2'){
+    console.log('auto on manuel');
+}else{
+    console.log('it is not a valid value');
+}
+*/ 
+vites ='2';
+switch(vites){
+    case '1':
+        console.log('auto is automatic');
+        break;
+    case '2':
+        console.log('auto is manuel');
+        break;
+    default:
+        console.log('not a valid value')
 
-console.log(z>=x);
-console.log(x=="10");
-console.log(x!=z);
-
-
-/* 3- Mantiksal Operatorler */
-
-/* && (And) Operatoru */
- 
-console.log((20>10) && (10==10));
-
-console.log((5>5) && (10==10));
-
-/* || (Or) Operatori */
-
-console.log((5>5) || (10==10));
-
-/* ! (NOT) Operatoru */
-
-console.log(!(5>5));
+}
