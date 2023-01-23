@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+    <meta charset="UTF-8">
+    <title>ARRAYS</title>
+</head>
+<body>
+    <h1> JAVASCRIPT ARRAYS </h1>
+
+    <script > 
+    
+    var marka = ["Opel", "Toyota", "Mazda", "Citroen", "Audi"];
+    var model = new Array("Corsa","Pirius","5","Picasso","A4")
+    console.log(marka[0]);
+    console.log(model[0]);
+    model[0]="Astra";
+    console.log(model);
+
+    var auris = ["Toyota","Auris",42,"true"];
+    
+     auris.unshift("HB");
+     auris.push("navy blue");
+     auris.pop();  /* delete the last element*/
+     auris.shift(); /* delete the first element*/
+     console.log(auris);
+
+     for(var i=0; i<marka.length;i++){
+        console.log(marka[i]);
+     }
+
+    if(marka.indexOf("Mercedes")!==-1){
+        console.log("found");
+    }else{
+        console.log("The word  you search it has not found");
+    }
+   
+    </script>
+
+    
+
+</body>
+</html>
