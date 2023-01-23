@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+    <meta charset="UTF-8">
+    <title>If else statements harjoittelu</title>
+</head>
+<body>
+   
+    <script>
+
+    /* 1 - FOr the birthday it counts if they can take 
+    a driverlicence or not. if he is under 18 he couldnot take driver licence 
+    but on the other hand it says how many year he needs?
+    
+    
+
+    var birth = prompt("enter your birthyear :");
+    var year = 2018;
+    var yas = year - birth;
+    
+    if (yas<18){
+        console.log('you dont have permission for driver licence');
+        console.log('you have to wait for driver licence '+(18-yas)+' years');
+    }
+
+    else if(yas>=18){
+        console.log('You could take a driver licence');
+    }
+
+    else{
+        console.log('your informations are wrong');
+    }
+
+    */
+/*
+2- it finds the season from the input of month
+    */
+
+    var mounth = prompt('enter the mounth'); /* if you want you want the value from the user ---> var mounth = prompt("enter the mounth :"); */
+    switch(mounth){
+        case '1':
+        case '2':
+        case '12':
+            console.log("winter");
+            break
+        case '3':
+        case '4':
+        case '5':
+            console.log("spring");
+            break
+        case '6':
+        case '7':
+        case '8':
+            console.log("summer");
+           break
+        case '9':
+        case '10':
+        case '11':
+            console.log("autumn");
+            break
+        default:
+            console.log("wrong value :")
+
+    }
+
+    </script>
+
+</body>
+</html>
