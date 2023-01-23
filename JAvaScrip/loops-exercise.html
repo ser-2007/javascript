@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+    <meta charset="UTF-8">
+    <title>LOOPS</title>
+</head>
+<body>
+    <h1> JAVASCRIPT LOOPS - For- While </h1>
+
+    <script > 
+    
+   /* 
+   #1 10 to 100 numbers
+
+   
+   #2 10-100 , write numbers 5,10,15 ...'
+   #3 Login control; user put name and pass and check this, if it doesnot sync continue to want 
+*/
+/*
+for (var i=10; i<=100; i++){
+    console.log(i);
+}
+
+for (var i=10; i=100; i--){
+    console.log(i);
+}
+*/ 
+/*
+
+var i = 10;
+while(i<=100){
+    console.log(i);
+    i=i+5
+}
+
+*/
+
+    var user_name = "guest";
+    var user_password = "12345";
+    var login = false;
+
+    while (!login) {
+
+        var username = prompt("user_name :");
+        var password = prompt(" password : ");
+
+        if ((user_name==username) && (user_password==password)){
+            console.log("login success : ");
+            login=true;
+        }else{
+            console.log("incorrect entry, please try again :")
+        }
+}
+
+</script>
+
+
+
+    
+
+</body>
+</html>
