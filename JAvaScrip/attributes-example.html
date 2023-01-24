@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Attributes</title>
+    <link rel="stylesheet"
+    href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container mt-2">
+        <div class="row">
+            <div class="col-md-5">
+                <div class="card">
+
+                    <img class="card-img-top" src="" alt="">
+                    <div class="card body">
+                        <h5 class="card title"></h5>
+                        <a href="" class="btn btn-primary">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>  
+
+    <script>
+
+        var models=[
+            { 
+            name:'Mazda CX-3',
+            image: 'img/mazda.jpg',
+            link: 'https://www.arabam.com/ilan/galeriden-satilik-mazda-cx-3-1-5-sky-d-power-sense-plus/toyota-plaza-mici-dan-boyasiz-2020-mazda-cx5-power-sense-plus/19243845'
+            
+            },
+
+            { 
+            name:'Mazda',
+            image: 'img/bmw.jpg',
+            link: 'https://www.arabam.com/ilan/galeriden-satilik-bmw-4-serisi-418d-gran-coupe-prestige/2017-bmw-4-serisi-gran-coupe-4-18d-2-0-150hp-prestige-boyasiz/21509200'
+            
+            },
+
+             { 
+            name:'Volvo S60',
+            image: 'img/volvo.jpg',
+            link: 'https://www.arabam.com/ilan/sahibinden-satilik-volvo-s60-1-6-d-premium/sahibinden-volvo-s60-1-6-d-premium-2012-model/21435256'
+            
+            },];
+
+        
+        setInterval(function(){  /*asagidaki random uygulamasini kendisi 1 saniyede bir otomatik calistiriyor*/
+            var index = Math.floor(Math.random()*models.length);
+            var img = document.querySelector('.card-img-top');
+            var title = document.querySelector('.card-title');
+            var a = document.querySelector('a');
+
+            img.setAttribute('src',models[index].image);
+            a.setAttribute('href',models[index].link);
+            /*title.textContent=models[index].name;*/
+            
+        },1000);
+
+    </script>
+</body>
+</html> 
+
+
