@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+    <meta charset="UTF-8">
+    <title>OBJECTS</title>
+</head>
+<body>
+    <h1> JAVASCRIPT OBJECTS </h1>
+
+    <script > 
+    
+/* 
+
+
+
+var now = 2018;
+var models = ["Toyota","Mazda","Mercedes","Opel"];
+var years = ["2015","2016","2012","2014"];
+
+var model = prompt("enter the model");
+var year = prompt("enter the year");
+models.push(model);
+years.push(year);
+
+for(var i=0;i<models.length;i++){
+  console.log(models[i] +" is "+years[i]+" model and "+(now-years[i]) +" years old auto");  
+}
+*/
+var opel={
+    marka : "Opel",
+    model : "Corsa",
+    year : "2015",
+    colour : "blue",
+    automatic : true
+};
+   console.log(opel.marka);
+   console.log(opel.automatic);
+   console.log(opel['colour']);
+
+   var toyota = new Object();
+   toyota.marka = "Toyota";
+   toyota.model = "Yaris";
+   toyota.colour = "green";
+   toyota.automatic = true;
+
+   toyota.model="auris";
+
+   console.log(toyota);
+
+
+   var cars=[
+{
+    marka : "Opel",
+    model : "Corsa",
+    year : "2015",
+    colour : "blue",
+    automatic : true
+},
+{
+    marka : "Citroen",
+    model : "Picasso",
+    year : "2016",
+    colour : "grey",
+    automatic : true
+}
+];
+
+   console.log(cars);
+   console.log(cars[0].colour);
+   console.log(cars[0].year);
+
+   for(var i=0; i<cars.length; i++){
+    console.log(cars[i].marka);
+   }
+    </script>
+
+    
+
+</body>
+</html>
