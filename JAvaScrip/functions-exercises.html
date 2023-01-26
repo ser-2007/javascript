@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+    <meta charset="UTF-8">
+    <title>FUNCTIONS EXERCISES</title>
+</head>
+<body>
+    <h1> JAVASCRIPT FUNCTIONS </h1>
+
+    <script> 
+/*    
+#1: give me the input numbers odd or even;
+function oddeven(number){
+    if(number%2==0){
+        return true;
+    }else{
+        return false;
+    }
+}
+
+if(oddeven(18)){
+    console.log("number is even")
+}else{
+    console.log("number is odd");
+}
+var number = oddeven(40);
+var number = oddeven(39);
+console.log(number);
+
+
+#2: calculate the factoriel of the number which has input from user
+
+function factoriel(number){
+
+
+    var result = 3;
+    for(var i=2;i<=number;i++){
+        result*=i;
+    }
+    return result;
+}
+
+console.log(factoriel(3))
+
+#3: write the elements of the array
+
+var models = ["opel","mazda","toyota"];
+function print(array){
+    array.forEach(function(item){
+        console.log(item);
+    });
+}
+
+print(models);
+
+
+
+#4 summarize sentence
+var sentence ="Exam discounts are available to employees of some organizations and to attendees of select events.";
+var maxCharacter = 20;
+if(maxCharacter>sentence.length){
+    console.log(sentence);
+}else{
+    var sum = sentence.substring(0,maxCharacter);
+    console.log(sum)
+}
+
+/*var sentence ="Exam discounts are available to employees of some organizations and to attendees of select events.";
+var maxCharacter = 20;
+var sumsentence = [];
+if(maxCharacter>sentence.length){
+    console.log(sentence);
+}else{
+    var words = sentence.split(' ');
+    console.log(words)
+}
+
+/*var sentence ="Exam discounts are available to employees of some organizations and to attendees of select events.";
+function summarize(sentence,maxCharacter){
+
+            var sumsentence = [];
+            if(maxCharacter>sentence.length){
+            return sentence;
+            }else{
+                var words = sentence.split(' ');
+                var totalcharacter = 0;
+                for(var i=0;i<words.length;i++){
+                    sumsentence.unshift(words[i]);
+                    totalcharacter+=words[i].length;
+            if(totalcharacter>maxCharacter){
+                break;
+            }
+
+                }
+            }
+            return sumsentence.join(" ") + "....";
+            } 
+
+            console.log(summarize(sentence,30)); 
+
+*/
+
+var product = {
+    name : "Samsung S8",
+    price: 3000,
+    description: "It is a good phone. Exam discounts are available to employees of some organizations and to attendees of select event"
+,
+    summary: function() {
+
+            var sumsentence = [];
+            var maxCharacter = 20;
+            var sentence = this.description
+            if(maxCharacter>sentence.length){
+                this.shortDescription = sentence;
+            }else{
+                var words = sentence.split(' ');
+                var totalcharacter = 0;
+                for(var i=0;i<words.length;i++){
+                    sumsentence.unshift(words[i]);
+                    totalcharacter+=words[i].length;
+            if(totalcharacter>maxCharacter){
+                break;
+            }
+
+                }
+            }
+            this.shortDescription = sumsentence.join(" ") + "....";
+            } 
+};
+product.summary();
+            console.log(product);
+
+
+
+
+
+</script>
+
+    
+
+</body>
+</html>

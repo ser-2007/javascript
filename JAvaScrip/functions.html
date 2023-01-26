@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+    <meta charset="UTF-8">
+    <title>FUNCTIONS</title>
+</head>
+<body>
+    <h1> JAVASCRIPT FUNCTIONS </h1>
+
+    <script > 
+/*    
+function sum(a,b){
+    return a+b;
+}
+
+var result = sum(10,25);
+
+console.log(result);
+console.log(sum(15,20));
+*/
+
+var now = 2022;
+function age_calculation(age){
+    return now-age;
+}
+
+var serkan = age_calculation(1982);
+var ali = age_calculation(1992);
+
+console.log("Age of serkan is :" +serkan);
+console.log("Age of Ali is " +ali);
+
+
+function retirement(name,age){
+    var user_age=age_calculation(age);
+    var us_retirement = 65 - user_age;
+
+    if(retirement>0) {
+
+    console.log(name+" will be retired after  "+us_retirement+" years");
+}else{
+    console.log(name+" is still retired, and he was retired "+(us_retirement*-1)+" years ago")
+}
+}
+
+retirement("serkan",1982);
+retirement("Kimmo",1952);
+
+
+    </script>
+
+    
+
+</body>
+</html>
