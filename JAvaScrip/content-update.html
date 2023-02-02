@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>update</title>
+    <style>
+        .active{
+            color:green;
+            font-size:45px;
+            border:1px solid blue;
+            padding: 10px;
+        }
+
+    </style>
+</head>
+<body>
+
+  
+<h1 id="title">Best free stock photos in one place.</h1>
+
+<h3 id="sub-title">Search for free photos..</h3>
+<p>Lorem ipsum dolor <strong>sit amet,
+</strong>consectetur.</p>
+
+<ul>
+    <li>item 1</li>
+    <li>item 2</li>
+    <li>item 3</li>
+</ul>
+
+<img src="serkan_sahan.jpg" alt="" width="300" height="300">
+
+<script>
+
+/*var title =
+document.getElementById('title');
+title.classList.add('active');*/
+
+/*title.style.color='yellow';
+title.style.fontSize='45px';
+title.style.border='1px solid blue';
+*/
+
+/*var p = document.getElementsByTagName('p')[0];
+p.textContent="it is very hard to learn JS";
+console.log(p);
+console.log(p.textContent);
+
+
+var ul = document.querySelector('ul');
+ul.textContent='list';
+
+console.log(ul);
+console.log(ul.textContent);*/
+
+var p = document.getElementsByTagName('p')[0];
+p.innerHTML='<b>it is</b>hard to learn JS';  /*html olarak sayfanin ana kismina ekleme yapiyor.*/
+var ul = document.querySelector('ul');
+ul.innerHTML='<li>item1=Serkan</><li>item2=Sahan</li>';
+</script>
+
+</body>
+</html>
