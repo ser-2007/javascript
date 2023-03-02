@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> JavaScript Exercise</title>
+    <h2>My first JavasCript Template</h2>
+    
+    <button type="button" onclick="document.getElementById('demo').innerHTML=Date()">Click me if want to learn the time and Date </button>
+
+    <p id="demo"></p>
+
+ 
+
+</head>
+<body>
+    
+</body>
+</html>
+
+----------------------------------------------------------------
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>What Can JavaScript Do?</h2>
+
+<p id="new">JavaScript can change HTML content.</p>
+
+<button type="button" onclick='document.getElementById("new").innerHTML = "Hello JavaScript!"'>Click Me!</button>
+
+</body>
+</html>
+
+----------------------------------------------------------------
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>What Can JavaScript Do?</h2>
+
+<p>JavaScript can change HTML attribute values.</p>
+
+<p>If it is not necessary Turn off the light.</p>
+
+<button onclick="document.getElementById('myImage').src='pic_bulbon.gif'">Turn on the light</button>
+
+<img id="myImage" src="pic_bulboff.gif" style="width:100px">
+
+<button onclick="document.getElementById('myImage').src='pic_bulboff.gif'">Turn off the light</button>
+
+</body>
+</html>
+
+
+
+----------------------------------------------------------------
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>What Can JavaScript Do?</h2>
+
+
+<script>
+    function turnOnOff() {
+        var image=document.getElementById('Image');
+        if(image.src.match("ONbulb"))
+            image.src=
+"OFFbulb.jpg";
+        else
+            image.src=
+"ONbulb.jpg";
+    }
+</script>
+ 
+    <img id="Image"
+          onclick="turnOnOff()"
+          src=
+"OFFbulb.jpg">
+ 
+<p>
+    Click on the bulb to turn it ON and OFF
+</p>
+
+
+</body>
+</html>
+
+
+
